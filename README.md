@@ -11,7 +11,7 @@
 ##### python object-tracker-multiple.py -v nillamoving.mp4
 
 In raspberry with pi camera, if you want to use it with streaming, change "-v nillamoving.mp4" to "http://localhost:8081"
-this uses 'motion streaming'.. "sudo apt-get install motion"
+  this uses 'motion streaming'.. "sudo apt-get install motion"
 
 -object tracking with dlib
 
