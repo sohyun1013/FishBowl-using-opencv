@@ -13,10 +13,13 @@
 In raspberry with pi camera, if you want to use it with streaming, change "-v nillamoving.mp4" to "http://localhost:8081"
 this uses 'motion streaming'.. "sudo apt-get install motion"
 
-> object tracking with dlib
-> calculate velocity, center of object
-> save data in Database
-> check multi object id
+-object tracking with dlib
+
+-calculate velocity, center of object
+
+-save data in Database
+
+-check multi object id
 
 
 # 참조 파일
