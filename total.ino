@@ -1,13 +1,15 @@
 #include <OneWire.h>
 
 int TempSensor = 2;
+int Heater = 5;
 
 OneWire ts(TempSensor);
 
 void setup() {
   Serial.begin(9600);
+  pinMode(Heater,OUTPUT);
+  digitalWrite(Heater,HIGH);
 }
-
 void loop() {
   int val;
   val = analogRead(1);
@@ -15,11 +17,18 @@ void loop() {
   float temperature = getTemp();
   int sensorValue = analogRead(A0);
   Serial.println(temperature);
-
+    
   float voltage = sensorValue * (5.0 / 1024.0);
-  Serial.println(voltage); 
+  Serial.println(voltage);
+  
+  if (temperature<=200){
+    digitalWrite(Heater,LOW);
+  } else if (temperature>=250){
+    digitalWrite(Heater,HIGH);
+  }
+  digitalWrite(Heater,LOW);
   delay(30000);
-}
+ }
 
 float getTemp() {
   byte data[12];
