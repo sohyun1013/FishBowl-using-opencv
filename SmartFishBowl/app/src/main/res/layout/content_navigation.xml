@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_navigation">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/button1"
+                android:layout_weight="1"
+                android:background="#48a4b1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:onClick="onClick">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/alarm"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="통합 모니터링"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/button2"
+                android:layout_weight="1"
+                android:background="#48a4b1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:onClick="onClick">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/play"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="실시간 어항 감상"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:background="#48a4b1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:onClick="onClick">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/fish"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="물고기 움직임 조회"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/button4"
+                android:layout_weight="1"
+                android:background="#48a4b1"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:onClick="onClick">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/waterdrop"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="어항 환경 조회"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp">
+    </LinearLayout>
+
+</LinearLayout>

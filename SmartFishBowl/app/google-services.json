@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "597100015798",
+    "firebase_url": "https://smartfishbowl2.firebaseio.com",
+    "project_id": "smartfishbowl2",
+    "storage_bucket": "smartfishbowl2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597100015798:android:36c4f513c033cb2f",
+        "android_client_info": {
+          "package_name": "com.example.hs.smartfishbowl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597100015798-87ijb701ek4moc5nrs2idul9qv4msjml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUVa0nc3eRD_qh-jPEQQcse_oUsgwlyVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597100015798-87ijb701ek4moc5nrs2idul9qv4msjml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
