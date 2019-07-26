@@ -39,7 +39,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
-    private static String IP_ADDRESS = "192.168.35.164";
+    private static String IP_ADDRESS = "IP";
     private static String TAG = "phptest";
     private String mJsonString;
     private static final String TAG2 = "tokenid";
