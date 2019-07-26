@@ -24,7 +24,7 @@ public class PlayActivity extends AppCompatActivity {
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(true);
 
-        String url = "http://192.168.35.164:8081";
+        String url = "http://IP:8081";
         webView.loadUrl(url);
     }
 
