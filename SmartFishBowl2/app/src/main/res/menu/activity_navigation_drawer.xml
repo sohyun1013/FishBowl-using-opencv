@@ -7,19 +7,19 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/alarm"
-            android:title="이상 증세 조회" />
+            android:title="통합 모니터링" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/play"
-            android:title="통합 모니터링" />
+            android:title="실시간 어항 감상" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/thermometer"
-            android:title="수온 상태 조회" />
+            android:icon="@drawable/fish"
+            android:title="물고기 움직임 조회" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/waterdrop"
-            android:title="수질 상태 조회" />
+            android:title="어항 환경 조회" />
         <item
             android:id="@+id/nav_dictionary"
             android:icon="@drawable/dictionary"

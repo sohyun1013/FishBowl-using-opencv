@@ -26,7 +26,6 @@
         </activity>
         <activity android:name=".TotalActivity" />
         <activity android:name=".TurbActivity" />
-        <activity android:name=".TempActivity" />
         <activity android:name=".PlayActivity" />
         <activity android:name=".DssActivity" />
 

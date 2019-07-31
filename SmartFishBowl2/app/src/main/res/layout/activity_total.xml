@@ -15,7 +15,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:onClick="onClick"
+            android:id="@+id/berryCon">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -29,7 +31,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/conditionA"
-                android:onClick="onClick"
                 android:textSize="15dp"
                 android:text="Berry's Condition"/>
         </LinearLayout>
@@ -38,7 +39,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:onClick="onClick"
+            android:id="@+id/nillaCon">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,7 +55,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/conditionB"
-                android:onClick="onClick"
                 android:textSize="15dp"
                 android:text="Nilla's Condition"/>
         </LinearLayout>

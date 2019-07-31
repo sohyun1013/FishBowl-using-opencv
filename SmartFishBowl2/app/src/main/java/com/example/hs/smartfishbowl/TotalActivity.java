@@ -1,21 +1,14 @@
 package com.example.hs.smartfishbowl;
 
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.data.Entry;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 //통합 모니터링할 수 있는 액티비티
@@ -55,12 +48,6 @@ public class TotalActivity extends AppCompatActivity {
         ImageView turbImg = (ImageView)findViewById(R.id.turbImg);
         ImageView moveImg = (ImageView)findViewById(R.id.moveImg);
         ImageView moveImg2 = (ImageView)findViewById(R.id.moveImg2);
-        //ImageView faceImg = (ImageView)findViewById(R.id.face);
-
-        LinearLayout button1 = (LinearLayout) findViewById(R.id.button1);
-        LinearLayout button2 = (LinearLayout) findViewById(R.id.button2);
-        LinearLayout button3 = (LinearLayout) findViewById(R.id.button3);
-        LinearLayout button4 = (LinearLayout) findViewById(R.id.button4);
 
         Intent intent = getIntent();
         tempList = intent.getParcelableArrayListExtra("tempList");
@@ -144,14 +131,6 @@ public class TotalActivity extends AppCompatActivity {
                     checkState1 = true;
                 }
             }
-            /*else {
-                if (i==0) {
-                    inform_state.append(name+"물고기가 정상적으로 움직입니다.");
-                } else {
-                    inform_state2.append(name+"물고기가 정상적으로 움직입니다.");
-                }
-            }*/
-
 
             if (!checkState0 && i==0)
             {
@@ -233,15 +212,13 @@ public class TotalActivity extends AppCompatActivity {
 
     public void onClick(View view) {         //Activity 전환
         Intent intent = null;
-        //GetData task = new GetData();
-        //task.execute( "http://" + IP_ADDRESS + "/sensor_db.php", "");
         switch (view.getId()) {
-            case R.id.conditionA: // 이상증세에 대한 전체적인 설명 기재
+            case R.id.berryCon: // 이상증세에 대한 전체적인 설명 기재
                 intent = new Intent(getApplicationContext(), ExplainActivity.class);
                 intent.putExtra("veloList", veloList);
                 intent.putExtra("locList", locList);
                 break;
-            case R.id.conditionB: // 이상증세에 대한 전체적인 설명 기재
+            case R.id.nillaCon: // 이상증세에 대한 전체적인 설명 기재
                 intent = new Intent(getApplicationContext(), ExplainActivity.class);
                 intent.putExtra("veloList", veloList);
                 intent.putExtra("locList", locList);
@@ -265,7 +242,6 @@ public class TotalActivity extends AppCompatActivity {
                 intent.putExtra("turbList", turbList);
                 break;
         }
-
         if (intent != null) {
             startActivity(intent);
         }
