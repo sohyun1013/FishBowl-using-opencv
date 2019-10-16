@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity"
+    android:gravity="center_horizontal">
+    <TableRow android:layout_width="match_parent" android:layout_height="150dp">
+        <TextView android:text=""/>
+        <TextView android:text="베리" android:layout_gravity="center" android:textSize="30dp"/>
+        <TextView android:text="닐라" android:layout_gravity="center" android:textSize="30dp"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="150dp">
+        <TextView android:text=""/>
+        <ImageView android:src="@drawable/berry" android:layout_width="150dp" android:layout_height="150dp" android:layout_gravity="center"/>
+        <ImageView android:src="@drawable/nilla" android:layout_width="150dp" android:layout_height="150dp" android:layout_gravity="center"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="150dp">
+        <TextView android:text="어종" android:layout_gravity="center"/>
+        <TextView android:text="금붕어" android:layout_gravity="center"/>
+        <TextView android:text="금붕어" android:layout_gravity="center"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="150dp">
+        <TextView android:text="평균속도" android:layout_gravity="center"/>
+        <TextView android:text="100.3979" android:id="@+id/berryVelo" android:layout_gravity="center"/>
+        <TextView android:text="126.0860" android:id="@+id/nillaVelo" android:layout_gravity="center"/>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="150dp">
+        <TextView android:text="등록날짜" android:layout_gravity="center"/>
+        <TextView android:text="2019/08/12" android:id="@+id/berryDate" android:layout_gravity="center"/>
+        <TextView android:text="2019/08/12" android:id="@+id/nillaDate" android:layout_gravity="center"/>
+    </TableRow>
+</TableLayout>
