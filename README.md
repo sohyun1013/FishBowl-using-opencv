@@ -4,9 +4,9 @@
   안드로이드 앱
   
 ### data-management_python(Raspberry pi)
-  checkValue.py :calculate average of velocity, object location etc.. and send push notification to android in time
-  getArduinoData.py : get arduino data and save data to database
-  saveModel.py : save sample data to database
+  - checkValue.py :calculate average of velocity, object location etc.. and send push notification to android in time
+  - getArduinoData.py : get arduino data and save data to database
+  - saveModel.py : save sample data to database
 
 ### object-tracking-with-dlib(Window 10)
 ##### python object-tracker-multiple.py -v nillamoving.mp4
