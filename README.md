@@ -20,12 +20,12 @@ In raspberry with pi camera, if you want to use it with streaming, change "-v ni
 
 ### php_file
   - captureImage.php : 물고기의 이름을 지정하기 위한 어항 캡처 사진
-  - fishInput.php : 
-  - fishXY_0.php : 
-  - fishXY_1.php : 
-  - nowStateLoc.php : 
-  - nowStateVelo.php : 
-  - sensorDB.php : 
+  - fishInput.php
+  - fishXY_0.php
+  - fishXY_1.php 
+  - nowStateLoc.php 
+  - nowStateVelo.php
+  - sensorDB.php 
   
 ### [논문]영상처리 기반 물고기 이상 증세 관리 어항의 개발
 
