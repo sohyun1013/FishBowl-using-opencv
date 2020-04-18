@@ -91,3 +91,10 @@
   - nowStateLoc.php 
   - nowStateVelo.php
   - sensorDB.php 
+
+<br>
+
+## 8. 결과물
+<img src="./resources/result.png"/>
+  
+<br>
