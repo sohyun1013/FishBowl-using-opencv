@@ -12,7 +12,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(16,GPIO.OUT)
 
 device_id = "epND3LvN95M:APA91bEUQv89P9235QM7XG1p1LAi1DfP2m_H6yFNm8ffKgLmv-IgaRWMqe0mglU_acwmqzUXGKXB1mgDAQt8UTVJChIzi_bPs6poZ97HNyusxUewhVyLHe4j2-jsFSpgbHIzIQNeuiu4"
-server_key = "AAAAiwXvMLY:APA91bEtfWuXWxSbUOxQp4Nj5pc4lpRk9zbs4c9ptKjbeThqfLzq97J2iJHXp9VDf9FltQz8ZH9WfzZmMsG8vnIr1sNBdlGTjO8-LtyBmgvfNjQLrnv6ljP5gruq9Phbl483WczvyMmD"
+server_key = "####"
 push_service = FCMNotification(api_key=server_key)
 
 db = MySQLdb.connect(host="localhost",user="pi",passwd="**",db="example")
