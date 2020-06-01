@@ -40,12 +40,12 @@ def locationMeasure(inNo, newdata_Y):
     bottomError = (Y>620)
     
     #Y의 좌표값의 80% 이상이 200(상단)보다 위에 있으면 이상이 있다고 간주
-    if np.sum(topError) > (len(newdata_Y)*0.7):
+    if np.sum(topError) > (len(newdata_Y)*0.8):
         sendMessage("물고기가 수면에 오래 머무릅니다.")
         loc = "top"
         GPIO.output(16,True)
 
-    elif np.sum(bottomError) > (len(newdata_Y)*0.7):
+    elif np.sum(bottomError) > (len(newdata_Y)*0.8):
         sendMessage("물고기가 바닥에 오래 머무릅니다.")
         loc = "bottom"
 
@@ -66,15 +66,12 @@ def velocityMeasure(idNo, newdata_V,velocityAvg,velocitySD):
     print(DataAvg, velocityAvg)
     if DataAvg < velocityAvg * 0.5:
         sendMessage("움직임이 너무 느려요. 상태를 확인해주세요.")
-        print("too slow")
         velo = "slow"
     elif DataAvg > velocityAvg * 2:
         sendMessage("움직임이 너무 빨라요. 시스템의 이상이 예상됩니다.")
-        print("too fast")
         velo = "fast"
 
     else:
-        print("speed normal")
         velo = "veloNormal"
 
     curs1.execute('insert into nowStateVelo values (%s, %s)', (idNo, velo))
