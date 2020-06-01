@@ -25,38 +25,34 @@ def sendMessage(msg):
     message_body = msg
 
     data_message = { "body" : message_body }
-
-    result = push_service.notify_single_device(registration_id=registration_id,message_title=message_title,message_body=message_body,data_message=data_message)
-    print(result)
+    
+    # 스마트폰에 현재 상태를 알림
+    result = push_service.notify_single_device(registration_id=registration_id,message_title=message_title,
+                                               message_body=message_body,data_message=data_message)
 
 def locationMeasure(inNo, newdata_Y):
     #topBase = 200 Y top 20%
     #bottomBase = 620 Y bottom 20%
     Y = np.array(newdata_Y)
+    # 스마트폰에 보낼 문자열
     loc = ""
     topError = (Y<200)
     bottomError = (Y>620)
     
     #Y의 좌표값의 80% 이상이 200(상단)보다 위에 있으면 이상이 있다고 간주
     if np.sum(topError) > (len(newdata_Y)*0.7):
-        sendMessage("물고기가 수면에 오래 머물러요")
-        print("have top problem")
+        sendMessage("물고기가 수면에 오래 머무릅니다.")
         loc = "top"
-        time.sleep(2)
         GPIO.output(16,True)
-        time.sleep(2)
 
     elif np.sum(bottomError) > (len(newdata_Y)*0.7):
-        sendMessage("물고기가 바닥에 오래 머물러요")
-        print("have bottom problem")
+        sendMessage("물고기가 바닥에 오래 머무릅니다.")
         loc = "bottom"
 
     else:
-        print("location normal")
+        sendMessage("정상입니다.")
         loc = "locNormal"
-        time.sleep(2)
         GPIO.output(16,True)
-        time.sleep(2)
     
     curs1.execute('insert into nowStateLoc values(%s, %s)',(idNo,loc))
     db.commit()
